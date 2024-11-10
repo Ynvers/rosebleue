@@ -10,7 +10,7 @@ from langchain.chains import create_retrieval_chain
 
 # Charger les variables d'environnement
 load_dotenv()
-genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
+genai_api_key = st.secrets["general"]["GOOGLE_API_KEY"]
 
 
 # Initialisation des embeddings et de la base vectorielle
